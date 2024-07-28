@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap');
+
+@font-face {
+    font-family: 'Fraktur';
+        src: url('../fonts/Kleist-Fraktur.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    background: #48F78B;
+    box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.25);
+}
+
+header img {
+    width: 150px;
+    height: 150px;
+}
+
+header a {
+    font-family: Signika Negative;
+    color: white;
+    text-decoration: none;
+    font-size: 32px;
+    margin: 0px 30px;
+    transition: color 0.1s ease-out 250ms;
+}
+
+header a:hover {
+    color: lightgrey;
+}
+
+h1 {
+    font-family: 'Fraktur';
+    font-size: 96px;
+}
+
+h2 {
+    font-family: Signika Negative;
+    font-size: 24px;
+    margin-bottom: 4px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    width: 60%;
+    max-width: 1000px;
+    margin: 15px;
+}
+
+p {
+    font-family: Signika Negative;
+    font-size: 18px;
+    text-align: center;
+    margin: 0;
+}
+
+
+.image-container {
+    display: flex;
+    justify-content: space-evenly; /* Adjusts the space between the images */
+    margin-top: 20px;
+}
+
+.image {
+    width: 45%; /* Adjust the width as needed */
+    height: auto; /* Maintains the aspect ratio */
+}
